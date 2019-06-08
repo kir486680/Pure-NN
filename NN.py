@@ -8,7 +8,7 @@ class Neural_Network(object):
     self.outputSize = 1
     self.hiddenSize = 8
 
-    #weights (get them from keras model)
+    #weights (get them from somewhere )
     self.W1 = [[ 2.0315645 ,  1.8409909 , -0.33502752, -0.18639019, -0.96386826,
         -0.11131245, -0.5236887 , -0.30002964],
        [-0.49199048, -0.24202986, -0.14692506, -0.2556005 ,  0.29572394,
@@ -83,3 +83,5 @@ class Neural_Network(object):
       res.append(comp)
     return res
 NN = Neural_Network()
+
+o = NN.forward(X)
